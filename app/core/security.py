@@ -12,7 +12,7 @@ def create_token(data: dict, expire_time = 30):
         algorithm = settings.JWT_ALGORITHM
     )
 
-def verify_token(token: str):
+def decode_token(token: str):
     try:
         payload = jwt.decode(
             token, 
