@@ -6,7 +6,5 @@ def register_exception_handlers(app: FastAPI):
     async def unhadled_exception_handler(request: Request, exc: Exception):
         return JSONResponse(
             status_code = 500,
-            content = {
-                'detail': str(exc)
-            }
+            content = {'detail': str(exc)}
         )
