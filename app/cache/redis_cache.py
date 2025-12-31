@@ -10,16 +10,16 @@ REDIS_URL = os.getenv("REDIS_URL")
 redis_client = redis.StrictRedis.from_url(REDIS_URL, decode_responses=True)
 
 
-# def get_cached_prediction(key: str):
-#     value = redis_client.get(key)
-#     return eval(value) if value else None
+def get_cached_prediction(key: str):
+    value = redis_client.get(key)
+    return eval(value) if value else None
 
-def get_cached_prediction(key):
-    try:
-        return redis_client.get(key)
-    except redis.RedisError as e:
-        print("Redis error:", e)
-        return None
+# def get_cached_prediction(key):
+#     try:
+#         return redis_client.get(key)
+#     except redis.RedisError as e:
+#         print("Redis error:", e)
+#         return None
 
 
 
