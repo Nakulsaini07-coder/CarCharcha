@@ -412,6 +412,4 @@ print(response.json())
 
 **Made with ❤️ for the automotive industry**
 
-[⬆ Back to top](#-carchercha---car-price-prediction-api)
-
 </div>
