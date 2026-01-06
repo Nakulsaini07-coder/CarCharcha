@@ -26,6 +26,16 @@ CarCharcha is a production-ready **REST API** that predicts car prices using adv
 
 ---
 
+## 🎬 Demo
+
+### Visual Walkthrough
+
+![CarCharcha Demo](CarCharchaDemo.gif)
+
+> Watch the API in action with authentication, price predictions, and real-time monitoring.
+
+---
+
 ## 📊 About the Dataset
 
 ### 📈 Dataset Overview
